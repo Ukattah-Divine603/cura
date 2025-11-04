@@ -6,6 +6,10 @@ export default function Home() {
     <main>
       <img src="/logo.svg" alt="cura logo" />
       <h1>Cura</h1>
+      <a href="/auth/login">Login</a>
+      <a className="ml-2" href="/auth/signup">
+        Sign Up
+      </a>
     </main>
   );
 }
