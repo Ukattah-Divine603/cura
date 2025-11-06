@@ -42,14 +42,14 @@ export default function Dashboard() {
           <div className="flex flex-row gap-4 mt-5 items-center justify-center">
             <a
               className="bg-[#3711b350] px-20 py-10 rounded-lg text-white text-2xl font-medium"
-              href="/auth/signup"
+              href="/treatment"
             >
               Treatment
             </a>
             <p> Or </p>
             <a
               className="bg-[#3711b350] px-20 py-10 rounded-lg text-white text-2xl font-medium"
-              href="/auth/login"
+              href="/precaution"
             >
               Precaution
             </a>

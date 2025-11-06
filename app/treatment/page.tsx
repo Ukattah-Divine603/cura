@@ -3,10 +3,10 @@ import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-export default function page() {
+export default function Treatment() {
   const router = useRouter();
   return (
-    <section className="lg:mx-100  flex flex-col justify-center lg:h-screen ">
+    <section className="lg:mx-100  flex flex-col justify-center lg:h-fit p-4 ">
       <header className="relative flex items-center py-4 text-white px-4">
         <button onClick={() => router.back()} className="absolute left-4">
           <ArrowLeft className="h-10 w-10 p-2 bg-[#4006FF] rounded-full" />
@@ -33,17 +33,27 @@ export default function page() {
             id="email"
             placeholder="Enter your email"
           />
-          <label className="pl-2">Password</label>
+
+          <label className="pl-2">Symptomps Experienced</label>
           <input
-            className="py-4 px-4 bg-[#D9D9D921] rounded-2xl outline outline-[#4006FF] "
-            type="password"
-            id="password"
-            placeholder="Enter your password"
+            className="py-4 px-4 bg-[#D9D9D921] rounded-2xl outline outline-[#4006FF] onfocus:outline-none "
+            type="text"
+            id="name"
+            placeholder="Enter symptoms experienced"
           />
+
+          <label className="pl-2">Illness Type {"(Specify If Sure)"} </label>
+          <input
+            className="py-4 px-4 bg-[#D9D9D921] rounded-2xl outline outline-[#4006FF] onfocus:outline-none "
+            type="text"
+            id="name"
+            placeholder="Illness Name"
+          />
+
           <input
             type="submit"
             value="Submit"
-            className="bg-[#4006FF] text-white px-6 py-5 rounded-2xl"
+            className="bg-[#4006FF] text-white px-6 py-5 rounded-2xl cursor-pointer mt-3 mb-3"
           />
         </form>
       </fieldset>
