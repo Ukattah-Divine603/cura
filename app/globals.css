@@ -1,2 +1,35 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+
+body {
+  background-color: #08002e;
+  color: white;
+}
+
+/* Custom scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+  margin: 4px 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4006ff80;
+  border: 2px solid #4006ff;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #4006ffb3;
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4006ff80 transparent;
+}

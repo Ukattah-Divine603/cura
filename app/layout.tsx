@@ -1,20 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const nunitoSans = Nunito_Sans({
+  variable: "--font-nunito-sans",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Cura",
-  description: "Cura is an Ai platform for health care and treetment",
+  title: "CURA",
+  description: "AI Health App",
 };
 
 export default function RootLayout({
@@ -24,9 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#08002E]`}
-      >
+      <body className={`${nunitoSans.variable} antialiased`}>
+        <Header />
         {children}
       </body>
     </html>
