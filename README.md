@@ -1,14 +1,12 @@
-###🩺 CURA
+## CURA
 
-CURA is a modern health platform built to make healthcare simpler, smarter, and more accessible.
-It helps users check symptoms, track health conditions, and interact with an AI assistant for quick guidance.
+CURA is a modern health platform built to make healthcare simpler, smarter, and more accessible. It helps users check symptoms, track health conditions, and interact with an AI assistant for quick guidance.
 
-##💡 Purpose
+## PURPOSE
 
-CURA aims to bridge the gap between people and healthcare through technology —
-making it easier for anyone to understand their health, get helpful insights, and connect with medical resources in one place.
+CURA aims to bridge the gap between people and healthcare through technology — making it easier for anyone to understand their health, get helpful insights, and connect with medical resources in one place.
 
-##⚙️ Tech Stack
+## TECH STACK
 
 Next.js – Framework for building the web app
 
@@ -20,7 +18,7 @@ Supabase – Authentication and database management
 
 TypeScript – Type-safe React components
 
-##🚀 What It Does
+## WHAT IT DOES
 
 Lets users log and check their symptoms easily
 
